@@ -26,6 +26,8 @@
           :background-repeat="segment.backgroundRepeat"
           :class="segment.class"
           :variant="segment.variant"
+          :text="segment.text"
+          :url="segment.url"
         />
       </div>
     </div>
@@ -194,8 +196,13 @@ export default {
         content: ['Feel free to give me a shout!'],
         type: 'TextSegment'
       }, {
-        type: 'SocialSegment',
-        width: '100%'
+        text: 'Github',
+        url: 'https://github.com/Dorkside',
+        type: 'LinkSegment'
+      }, {
+        text: 'Linkedin',
+        url: 'https://www.linkedin.com/in/dorkside/',
+        type: 'LinkSegment'
       }]
     }
   }
