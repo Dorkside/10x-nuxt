@@ -223,8 +223,6 @@ body {
 }
 </style>
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-
 .layout {
   margin: 0 auto;
   padding-left: 20px;
