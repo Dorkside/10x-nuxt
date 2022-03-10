@@ -1,13 +1,6 @@
 <template>
   <main class="layout">
-    <div class="logo-title">
-      <div class="logo-container">
-        <nuxt-img
-          class="logo"
-          src="/favicon.png"
-        />
-      </div>
-    </div>
+    <logo />
     <div class="segment-container">
       <div
         v-for="(segment,index) of contentSegments"
@@ -227,41 +220,6 @@ body {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.logo-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: var(--text-size);
-  background-repeat: no-repeat;
-  background-color: black;
-  overflow: hidden;
-
-  .logo-effect {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    max-width: 512px;
-    max-height: 512px;
-  }
-
-  .logo-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
-    mix-blend-mode: multiply;
-  }
 }
 
 .segment-container {

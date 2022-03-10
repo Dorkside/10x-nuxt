@@ -4,7 +4,7 @@
       <span
         v-for="(word, wordIndex) in text.split(' ')"
         :id="word"
-        :key="`${partIndex}-${wordIndex}`"
+        :key="`${wordIndex}`"
         class="word"
         :class="variant"
       >
