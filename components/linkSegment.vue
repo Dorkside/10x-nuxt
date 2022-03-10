@@ -73,7 +73,7 @@ a::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 32px;
+  height: calc(var(--text-size) / 5);
   background: black;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
