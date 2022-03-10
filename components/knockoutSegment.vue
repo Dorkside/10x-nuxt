@@ -3,36 +3,36 @@
     class="content-container"
   >
     <template v-for="(contentPart, partIndex) of content">
-      <span
-        v-for="(word, wordIndex) in contentPart.split(' ')"
-        :id="word"
-        :key="`${partIndex}-${wordIndex}`"
-        class="word"
-        :style="{
-          backgroundImage: `url(${backgroundUrl})`,
-          backgroundColor: `${backgroundColor}`,
-          backgroundAttachment: `${backgroundAttachment}`,
-          backgroundPosition: `${backgroundPosition}`,
-          backgroundRepeat: `${backgroundRepeat}`,
-          backgroundSize: `${backgroundSize}`,
-        }"
-      >
-        <div
-          class="bg"
-        />
+      <template v-for="(word, wordIndex) in contentPart.split(' ')">
         <span
-          v-for="(letter,index) in word"
-          :key="index"
-          class="letter"
-          :class="letter"
-        >{{ letter }}</span>
+          :id="word"
+          :key="`${partIndex}-${wordIndex}`"
+          class="word"
+          :style="{
+            backgroundImage: `url(${backgroundUrl})`,
+            backgroundColor: `${backgroundColor}`,
+            backgroundAttachment: `${backgroundAttachment}`,
+            backgroundPosition: `${backgroundPosition}`,
+            backgroundRepeat: `${backgroundRepeat}`,
+            backgroundSize: `${backgroundSize}`,
+          }"
+        >
+          <div
+            class="bg"
+          />
+          <span
+            v-for="(letter,index) in word"
+            :key="index"
+            class="letter"
+            :class="letter"
+          >{{ letter }}</span>
+        </span>
         <span
           v-if="getLetterIndex(partIndex, wordIndex, word.length) !== contentPart.length"
+          :key="`${partIndex}-${wordIndex}-space`"
           class="letter"
-        >
-          &nbsp;
-        </span>
-      </span>
+        >&nbsp;</span>
+      </template>
     </template>
   </span>
 </template>
