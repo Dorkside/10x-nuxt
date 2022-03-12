@@ -12,15 +12,13 @@
           v-for="(letter,index) in word"
           :key="index"
           class="letter"
-          :class="`${letter} ${variant}`"
           :style="{color}"
+          :class="{letter, variant, uppercase: letter === letter.toUpperCase()}"
         >{{ letter }}</span>
         <span
           v-if="getLetterIndex(partIndex, wordIndex, word.length) !== contentPart.length"
-          class="letter"
-        >
-          &nbsp;
-        </span>
+          class="letter space"
+        >&nbsp;</span>
       </span>
     </template>
   </span>
@@ -76,6 +74,16 @@ export default {
   }
 
   .letter {
+    &.uppercase {
+      font-size: calc(var(--text-size) * 1.2);
+      letter-spacing: calc(var(--text-size) * -0.1);
+      margin-left: calc(var(--text-size) * -0.1);
+    }
+
+    &.space {
+      letter-spacing: calc(var(--text-size) * -1);
+    }
+
     &.opacity {
       opacity: 0.4;
     }

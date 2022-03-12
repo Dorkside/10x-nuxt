@@ -24,13 +24,13 @@
             v-for="(letter,index) in word"
             :key="index"
             class="letter"
-            :class="letter"
+            :class="{letter, uppercase: letter === letter.toUpperCase()}"
           >{{ letter }}</span>
         </span>
         <span
           v-if="getLetterIndex(partIndex, wordIndex, word.length) !== contentPart.length"
           :key="`${partIndex}-${wordIndex}-space`"
-          class="letter"
+          class="letter space"
         >&nbsp;</span>
       </template>
     </template>
@@ -105,15 +105,25 @@ export default {
   position: relative;
   overflow: hidden;
   background-color: white;
+  vertical-align: top;
 
   @media (max-width: 1024px) {
     background-attachment: scroll !important;
   }
+}
 
-  .letter {
-    background: black;
-    transition: opacity 0.3s ease-in-out, color 0.8s ease-in-out;
-    mix-blend-mode: multiply;
+.letter {
+  background: black;
+  transition: opacity 0.3s ease-in-out, color 0.8s ease-in-out;
+  mix-blend-mode: multiply;
+
+  &.space {
+    letter-spacing: calc(var(--text-size) * -1);
+  }
+
+  &.uppercase {
+    font-size: calc(var(--text-size) * 1.2);
+    line-height: 0.8em;
   }
 }
 </style>

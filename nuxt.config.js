@@ -56,6 +56,12 @@ export default {
     families: {
       Raleway: {
         wght: [900]
+      },
+      'Rubik Mono One': {
+        wght: [400]
+      },
+      'Work Sans': {
+        wght: [900]
       }
     }
   }

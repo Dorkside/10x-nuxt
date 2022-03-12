@@ -20,11 +20,9 @@
         </span>
         <span
           v-if="getLetterIndex(partIndex, wordIndex, word.length) !== contentPart.length"
-          class="letter"
+          class="letter space"
           :class="{current: getLetterIndex(partIndex, wordIndex, word.length) <= currentLetter}"
-        >
-          &nbsp;
-        </span>
+        >&nbsp;</span>
       </span>
     </template>
     <span class="spacer" />
@@ -101,19 +99,24 @@ export default {
   &:hover {
     opacity: 1;
   }
+}
 
-  .letter {
-    display: none;
-    opacity: 0.4;
-    transition: opacity 0.3s ease-in-out, color 0.8s ease-in-out;
+.letter {
+  display: none;
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out, color 0.8s ease-in-out;
+  font-family: 'Rubik Mono One', Consolas, monospace;
 
-    &.current {
-      display: inline-block;
-    }
+  &.space {
+    letter-spacing: calc(var(--text-size) * -1);
+  }
 
-    &:hover {
-      opacity: 1;
-    }
+  &.current {
+    display: inline-block;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 }
 

@@ -52,7 +52,7 @@ export default {
         content: ['I love'],
         type: 'TextSegment'
       }, {
-        content: ['finding solutions.', 'creating stuff.', 'experimenting.', 'drinking beer.'],
+        content: ['finding solutions.', 'creating stuff.', 'experimenting.', 'tasting beer.'],
         type: 'SlideSegment',
         width: '100%'
       }, {
@@ -71,7 +71,7 @@ export default {
         backgroundSize: 'contain',
         backgroundRepeat: 'repeat'
       }, {
-        content: ['I grew up between countries and learned to love diversity.'],
+        content: ['I grew up between countries and learned to embrace diversity.'],
         type: 'TextSegment'
       }, {
         type: 'Spacer',
@@ -133,7 +133,7 @@ export default {
         width: '100%',
         variant: 'two'
       }, {
-        content: ['are the same colors.', 'This gave me a unique view on the world.'],
+        content: ['are the same colors bringing me a unique view on the world.'],
         type: 'TextSegment'
       }, {
         type: 'Spacer',
@@ -204,14 +204,13 @@ export default {
 
 <style>
 :root {
-  --text-size: 14vw;
+  --text-size: 9vw;
 }
 
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.5;
   background-color: black;
 }
 </style>
@@ -230,7 +229,8 @@ body {
   max-width: 100%;
 
   .segment {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-transform: uppercase;
     font-size: var(--text-size);
     line-height: calc(var(--text-size) * 0.85);
     color: white;

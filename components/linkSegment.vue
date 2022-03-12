@@ -17,10 +17,8 @@
         >{{ letter }}</span>
         <span
           v-if="getLetterIndex(wordIndex, word.length) !== text.length"
-          class="letter"
-        >
-          &nbsp;
-        </span>
+          class="letter space"
+        >&nbsp;</span>
       </span>
     </a>
   </span>
@@ -98,18 +96,22 @@ a:hover::after {
   &:hover {
     opacity: 1;
   }
+}
 
-  .letter {
-    &.opacity {
-      opacity: 0.4;
-    }
+.letter {
+  &.opacity {
+    opacity: 0.4;
+  }
 
-    transition: opacity 0.3s ease-in-out, color 0.8s ease-in-out;
+  &.space {
+    letter-spacing: calc(var(--text-size) * -1);
+  }
 
-    &:hover {
-      opacity: 1;
-      color: white;
-    }
+  transition: opacity 0.3s ease-in-out, color 0.8s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    color: white;
   }
 }
 

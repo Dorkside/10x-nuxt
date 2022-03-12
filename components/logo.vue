@@ -34,6 +34,7 @@ export default {
   margin: auto;
   width: 300px;
   height: 300px;
+  border-radius: 16px 0;
   overflow: hidden;
 }
 
