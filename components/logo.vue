@@ -3,6 +3,7 @@
     <div class="frame">
       <div class="central gradient one" />
       <div class="central gradient two" />
+      <div class="central gradient three" />
       <div class="central spot" />
     </div>
   </div>
@@ -48,6 +49,18 @@ export default {
   }
 }
 
+@keyframes grow-2 {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 0.5;
+    transform: scale(2);
+  }
+}
+
 .central {
   position: absolute;
   left: 0;
@@ -59,17 +72,22 @@ export default {
   &.gradient {
     transform: scale(0.2);
     border-radius: 50%;
-    animation-name: grow;
     animation-duration: 7s;
     animation-iteration-count: infinite;
-    border: solid 2px white;
 
     &.one {
-      background: radial-gradient(hsla(0, 0, 0, 1) 0%, hsla(0, 0, 0, 1) 30%, hsla(0, 0, 80%, 1) 70%, hsla(0, 0, 100%, 1) 100%);
+      animation-name: grow;
+      background: radial-gradient(hsla(0, 0, 0, 0) 0%, hsla(0, 0, 0, 50%) 30%, hsla(0, 0, 80%, 1) 70%, hsla(0, 0, 100%, 1) 80%, hsla(0, 0, 0, 50%) 100%);
     }
 
     &.two {
-      background: radial-gradient(hsla(0, 0, 0, 1) 0%, hsla(0, 0, 0, 1) 10%, hsla(0, 0, 80%, 1) 50%, hsla(0, 0, 100%, 1) 100%);
+      animation-name: grow-2;
+      background: radial-gradient(hsla(0, 0, 0, 0) 0%, hsla(0, 0, 0, 50%) 50%, hsla(0, 0, 100%, 1) 65%, hsla(0, 0, 100%, 1) 80%, hsla(0, 0, 0, 50%) 100%);
+    }
+
+    &.three {
+      animation-name: grow;
+      background: radial-gradient(hsla(0, 0, 0, 0) 0%, hsla(0, 0, 0, 50%) 10%, hsla(0, 0, 80%, 1) 50%, hsla(0, 0, 100%, 1) 80%, hsla(0, 0, 0, 50%) 100%);
     }
   }
 
