@@ -197,9 +197,9 @@ export default {
         url: 'https://www.linkedin.com/in/dorkside/',
         type: 'LinkSegment'
       }, {
-        text: 'Rsume',
-        url: 'https://www.linkedin.com/in/dorkside/',
-        type: 'https://dorkside.github.io/markdown-cv/'
+        text: 'Resume',
+        url: 'https://dorkside.github.io/markdown-cv/',
+        type: 'LinkSegment'
       }]
     }
   }
