@@ -189,7 +189,7 @@ export default {
         content: ['Feel free to give me a shout!'],
         type: 'TextSegment'
       }, {
-        text: 'Github',
+        text: 'Github   ',
         url: 'https://github.com/Dorkside',
         type: 'LinkSegment'
       }, {
@@ -197,11 +197,11 @@ export default {
         url: 'https://www.linkedin.com/in/dorkside/',
         type: 'LinkSegment'
       }, {
-        text: 'Resume',
+        text: 'Resume   ',
         url: 'https://dorkside.github.io/markdown-cv/',
         type: 'LinkSegment'
       },{
-        text: 'Devlog',
+        text: 'Devlog   ',
         url: 'https://blog.james-martin.dev',
         type: 'LinkSegment'
       }]
