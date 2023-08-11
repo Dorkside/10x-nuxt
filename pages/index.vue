@@ -201,7 +201,7 @@ export default {
         url: 'https://dorkside.github.io/markdown-cv/',
         type: 'LinkSegment'
       },{
-        text: 'Blog',
+        text: 'Devlog',
         url: 'https://blog.james-martin.dev',
         type: 'LinkSegment'
       }]
