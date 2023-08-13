@@ -105,8 +105,8 @@ export default {
       left: 0;
       background: black;
       height: calc(100% / (1.618 * 1.618));
-      width: 100%;
-      transform: translateX(-100%);
+      width: 110%;
+      transform: translateX(-95%);
     }
   }
 }
