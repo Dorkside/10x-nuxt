@@ -32,8 +32,9 @@ export default {
   top: 0;
   bottom: 0;
   margin: auto;
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  max-width: 60vw;
+  aspect-ratio: 1;
   border-radius: 16px 0;
   overflow: hidden;
 }
