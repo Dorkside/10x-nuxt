@@ -42,17 +42,17 @@ export default {
         content: ['James.'],
         type: 'KnockoutSegment'
       }, {
-        content: ['Senior', 'Self-taught', 'Full-stack', 'Creative'],
+        content: ['Self-taught', 'Full-stack', 'Creative'],
         type: 'SlideSegment',
         width: '100%'
       }, {
-        content: ['software developer.'],
+        content: ['product engineer.'],
         type: 'TextSegment'
       }, {
         content: ['I love'],
         type: 'TextSegment'
       }, {
-        content: ['finding solutions.', 'creating stuff.', 'experimenting.', 'tasting beer.'],
+        content: ['finding solutions.', 'creating stuff.', 'experimenting.'],
         type: 'SlideSegment',
         width: '100%'
       }, {
@@ -142,7 +142,7 @@ export default {
         content: ['One of my dreams is to'],
         type: 'TextSegment'
       }, {
-        content: ['fly to the moon.', 'contribute towards a more durable planet.', 'time-travel back to a concert of The Doors.'],
+        content: ['push technology towards a more durable planet.', 'time-travel back to a concert of The Doors.', 'sail around the Mediterranean sea.'],
         type: 'SlideSegment',
         width: '100%'
       }, {
@@ -152,7 +152,7 @@ export default {
         content: ['My hobbies include'],
         type: 'TextSegment'
       }, {
-        content: ['cooking.', 'sailing.', 'video-games.', 'coding.'],
+        content: ['cooking.', 'sailing.', 'video-games.'],
         type: 'SlideSegment',
         width: '100%'
       }, {
@@ -172,7 +172,7 @@ export default {
         content: ['Currently crafting'],
         type: 'TextSegment'
       }, {
-        content: ['the future of insurance', 'innovative tech', 'front-end awesomeness'],
+        content: ['legaltech', 'generative AI', 'front-end'],
         type: 'SlideSegment',
         width: '100%'
       }, {
