@@ -197,10 +197,6 @@ export default {
         url: 'https://www.linkedin.com/in/dorkside/',
         type: 'LinkSegment'
       }, {
-        text: 'Resume   ',
-        url: 'https://dorkside.github.io/markdown-cv/',
-        type: 'LinkSegment'
-      },{
         text: 'Devlog   ',
         url: 'https://blog.james-martin.dev',
         type: 'LinkSegment'
